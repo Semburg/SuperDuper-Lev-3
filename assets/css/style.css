@@ -1,6 +1,7 @@
 /* 
 Probleme:
 1. Seite wird nach links gescrollt. Grund nicht ganz klar.
+GELÖST - see the comment at line 30-32
 
 2. Header p font scheint von angegebenen zu unterscheiden. 
 GELÖST - ein anderes Font heruntergeladen (line 150), scheint zu stimmen
@@ -25,6 +26,10 @@ html{
     /* border: 3px green solid; */
     margin: 0;
     padding: 0;
+
+    /* solution for left scrolling  */
+    max-width: 100%;
+    overflow-x: hidden;
 
 }
 
@@ -84,8 +89,8 @@ nav{
     font-family: 'Gilda Display', serif;
     font-size: 1.2em;
     text-align: right;
-    margin: 100px 30px 80px auto;
-    margin-bottom: 10px;
+    margin: 100px 30px 100px auto;
+    margin-bottom: 30px;
     opacity: 70%;
     
 }
@@ -97,17 +102,13 @@ nav p:first-of-type{
 }
 nav p{
     padding: 2px;
-    margin-left: 80%;
-    margin-bottom: 0%;
+    margin: 0 5px 5px 80%;
 }
 nav p:hover{
     opacity: 20%;
     cursor: pointer;
 }
 
-main section{
-
-}
 
 main section:first-child{
     background: url("https://assets.website-files.com/5c8834f1555981170b2fd8b1/5c898cd67456ffcba141a5ff_PROJECTS.svg")  no-repeat;
