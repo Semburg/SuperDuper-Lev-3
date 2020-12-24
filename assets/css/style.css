@@ -1,0 +1,165 @@
+/* 
+Probleme:
+1. Seite wird nach links gescrollt. Grund nicht ganz klar.
+
+2. Header p font scheint von angegebenen zu unterscheiden. 
+GELÖST - ein anderes Font heruntergeladen (line 150), scheint zu stimmen
+
+3. Massstabierung der letzten Seiten mit den Bilder klappt nicht ganz. 
+Bei verkleinerung ist der Abstand zu gross. Vielleicht ist das aber 
+respo.disign und momental noch unwichtig. 
+
+*/
+
+
+
+/* 
+see noch the links and Farben 
+
+font-family: 'Gilda Display', serif;
+font-family: 'Maven Pro', sans-serif;
+
+*/
+
+html{
+    /* border: 3px green solid; */
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    margin: 0;
+    padding: 0%;
+    /* border: 3px green solid; */
+}
+
+header{
+    background: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-family: 'Maven Pro', sans-serif;
+    padding: 10px 95vw 0 10px;
+    letter-spacing: 3px;
+    margin-top: 0;
+}
+
+header section{
+    font-family: 'Gilda Display', serif;
+
+}
+
+header section:first-of-type{
+    background-image: linear-gradient(to top right, #8507e1, #3dc8d5);
+    border-radius: 4px;
+    margin:20vh 40vw;
+    width: 265px;
+    
+    text-align: center;
+    padding: 0;
+}
+
+header section:first-of-type:hover{
+    background-image: linear-gradient(to top right, #3dc8d5, #8507e1);
+}
+
+header h1{
+    font-size: 4em;
+    margin: 5px 0 0 0;
+    padding-left: 0%;
+    opacity: 85%;
+
+}
+header p{
+    font-family: 'Maven Pro', sans-serif;
+    padding-bottom: 10px;
+    opacity: 80%;
+}
+
+nav{
+    font-family: 'Gilda Display', serif;
+    font-size: 1.2em;
+    text-align: right;
+    margin: 100px 30px 80px auto;
+    margin-bottom: 10px;
+    opacity: 70%;
+    
+}
+header section:last-child{
+    padding-bottom: 20px;
+}
+nav p:first-of-type{
+    text-transform: uppercase;
+}
+nav p{
+    padding: 2px;
+    margin-left: 80%;
+    margin-bottom: 0%;
+}
+nav p:hover{
+    opacity: 20%;
+    cursor: pointer;
+}
+
+main section{
+
+}
+
+main section:first-child{
+    background: url("https://assets.website-files.com/5c8834f1555981170b2fd8b1/5c898cd67456ffcba141a5ff_PROJECTS.svg")  no-repeat;
+    width: 80vw;
+    height: 80vh;
+    text-align: left;
+    margin: 150px 100px;
+
+
+    
+}
+
+main h2{
+    font-size: 4em;
+    padding-top: 90px;
+    opacity: 70%;
+}
+
+main p{
+    width: 450px;
+    font-family: 'Maven Pro', sans-serif;
+    opacity: 60%;
+    line-height: 140%;
+}
+
+
+main section:not(:first-child){
+    width: 100vw;
+    height: 100vh;
+    /* margin: 150px 100px; */
+    text-align: left;
+    margin-left: 20vw;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+img{
+    width: 60vw;
+    border-radius: 5px;
+    /* height: 50vh; */
+}
+
+main h3{
+    font-family: 'Gilda Display', serif;
+    font-family: 'PT Serif', serif;
+    letter-spacing: -1px;
+
+    width: 60vw;
+    padding: 0%;
+    text-align: left;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+
