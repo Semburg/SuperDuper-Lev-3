@@ -3,12 +3,11 @@ Probleme:
 1. Seite wird nach links gescrollt. Grund nicht ganz klar.
 GELÖST - see the comment at line 30-32
 
-2. Header p font scheint von angegebenen zu unterscheiden. 
+2. Main p font scheint von angegebenen zu unterscheiden. 
 GELÖST - ein anderes Font heruntergeladen (line 150), scheint zu stimmen
 
-3. Massstabierung der letzten Seiten mit den Bilder klappt nicht ganz. 
-Bei verkleinerung ist der Abstand zu gross. Vielleicht ist das aber 
-respo.disign und momental noch unwichtig. 
+3. Masstabierung der letzten Seiten mit den Bilder klappt nicht ganz. 
+Bei verkleinerung ist der Abstand zu gross. Vielleicht ist das aber respo.disign und momental noch unwichtig. 
 
 */
 
@@ -27,7 +26,7 @@ html{
     margin: 0;
     padding: 0;
 
-    /* solution for left scrolling  */
+    /* disable left scrolling  */
     max-width: 100%;
     overflow-x: hidden;
 
@@ -36,7 +35,6 @@ html{
 body{
     margin: 0;
     padding: 0%;
-    /* border: 3px green solid; */
 }
 
 header{
@@ -116,9 +114,6 @@ main section:first-child{
     height: 80vh;
     text-align: left;
     margin: 150px 100px;
-
-
-    
 }
 
 main h2{
